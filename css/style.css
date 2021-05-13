@@ -1,0 +1,104 @@
+/*FONTS IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/*GENERAL STYLING*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+.bg-orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.bg-cayan {
+  background-color: hsl(184, 100%, 22%);
+}
+.cayan {
+  color: hsl(184, 100%, 22%);
+}
+
+.bg-dark {
+  background-color: hsl(179, 100%, 13%);
+}
+.dark {
+  color: hsl(179, 100%, 13%);
+}
+
+.card {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: translateY(-2px);
+  transition: all ease-in-out 0.3s;
+  box-shadow: 2px 2px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  height: 30px;
+  width: 50px;
+}
+
+.card > h2 {
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 1px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.card > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+
+.card > button {
+  width: 120px;
+  border-radius: 16px;
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: 40px;
+}
+
+.cards-container {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 850px;
+  height: 400px;
+  margin: 5rem auto;
+  display: flex;
+}
+
+@media (max-width: 936px) {
+  .cards-container {
+    flex-wrap: wrap;
+    height: 1100px;
+    width: 70%;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .card > button {
+    margin-top: 5px;
+  }
+}
